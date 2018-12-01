@@ -26,15 +26,11 @@ class AnswerResultsSeeder extends Seeder
                 ['answer_code' => 1, 'category' => 1, 'result' => 0.0],
                 ['answer_code' => 1, 'category' => 2, 'result' => 0.0],
                 ['answer_code' => 1, 'category' => 3, 'result' => 0.0],
-                ['answer_code' => 1, 'category' => 4, 'result' => 0.0],
-                ['answer_code' => 1, 'category' => 5, 'result' => 0.0],
             ],
             [
                 ['answer_code' => 2, 'category' => 1, 'result' => 0.0],
                 ['answer_code' => 2, 'category' => 2, 'result' => 0.0],
                 ['answer_code' => 2, 'category' => 3, 'result' => 0.0],
-                ['answer_code' => 2, 'category' => 4, 'result' => 0.0],
-                ['answer_code' => 2, 'category' => 5, 'result' => 0.0],
             ],
         ];
 

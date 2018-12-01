@@ -1,0 +1,77 @@
+div#cover .copy {
+    margin: 20px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ddd;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 18px;
+}
+
+div#cover .panel {
+    margin: 20px;
+    padding: 0px;
+}
+
+div#cover li.list-group-item.active {
+    background: green;
+}
+
+div#cover #playlist, div#cover audio {
+    width: 100%;
+}
+
+div#cover .active a {
+    color: #000;
+    text-decoration: none;
+}
+
+div#cover ul {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+}
+
+div#cover li {
+    margin: 0;
+    padding: 0;
+}
+
+div#cover li, div#cover a {
+    transition: all 0.5s;
+}
+
+div#cover .list-group-item.active a {
+    text-decoration: none;
+    color: #000;
+}
+
+div#cover a {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+div#cover li a {
+    display: block;
+    text-decoration: none;
+}
+
+div#cover li:hover {
+    background-color: #15ad1f;
+}
+
+div#cover li a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+div#cover a {
+    color: #000;
+    text-decoration: none;
+}
+
+div#cover .last {
+    display: none;
+}

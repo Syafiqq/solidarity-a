@@ -15,11 +15,9 @@ class QuestionCategoriesSeeder extends Seeder
     public function run()
     {
         $data = [
-            ['name' => 'Kategori 1', 'description' => 'Nilai Kejujuran'],
-            ['name' => 'Kategori 2', 'description' => 'Nilai ikhlas'],
-            ['name' => 'Kategori 3', 'description' => 'Nilai ketulusan'],
-            ['name' => 'Kategori 4', 'description' => 'Keyakinan'],
-            ['name' => 'Kategori 5', 'description' => 'Pengamalan'],
+            ['name' => 'Kategori 1', 'description' => 'Solidaritas Mekanik'],
+            ['name' => 'Kategori 2', 'description' => 'Solidaritas Organik'],
+            ['name' => 'Kategori 3', 'description' => 'Solidaritas Marginal'],
         ];
 
         /** @var \Illuminate\Database\Query\Builder $model */

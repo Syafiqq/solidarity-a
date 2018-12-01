@@ -23,10 +23,15 @@ trait AnswerResultCalculator
         /** @var AnswerResult $answer_results */
         $answer_results = $answer->getAttribute('answer_result');
         /** @var AnswerDetail $answer_scope */
-        $answer_scope = AnswerDetail::where('answer_code', '=', $answer->getAttribute('id'))->get([DB::raw("COUNT(`answer_details`.`id`) AS 'count'"), DB::raw("MAX(`answer_details`.`scale`) AS 'max'")])->first();
         /** @var AnswerResult $answer_result */
         foreach ($answer_results as $answer_result)
         {
+            $answer_scope = DB::table('answer_details')
+                ->leftJoin('questions', 'questions.id', '=', 'answer_details.question')
+                ->where('questions.category', '=', $answer_result->getAttribute('category'))
+                ->where('answer_details.answer_code', '=', $answer->getAttribute('id'))
+                ->get([DB::raw("COUNT(`answer_details`.`id`) AS 'count'"), DB::raw("MAX(`answer_details`.`scale`) AS 'max'")])[0];
+
             $answer_details = AnswerDetail::where('answer_code', '=', $answer->getAttribute('id'))->whereIn('question', Question::where('category', '=', $answer_result->getAttribute('category'))->lists('id'))->get();
             $result         = 0.0;
             /** @var AnswerDetail $answer_detail */
@@ -36,7 +41,7 @@ trait AnswerResultCalculator
             }
             try
             {
-                $result *= 100.0 / (doubleval($answer_scope->getAttribute('count')) * doubleval($answer_scope->getAttribute('max')));
+                $result *= 100.0 / (doubleval($answer_scope['count']) * doubleval($answer_scope['max']));
             }
             catch (\ErrorException $e)
             {

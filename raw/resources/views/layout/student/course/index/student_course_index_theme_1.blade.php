@@ -75,9 +75,9 @@ $now = \Carbon\Carbon::now();
                 <!-- /.box-body -->
                 <div class="box-footer">
                     @if($user->hasOpenedCourse())
-                        {!! link_to_route('student.course.start.edit', $title = 'Lanjutkan Sebelumnya', $parameters = [1], $attributes = ['class' => 'btn btn-success']);  !!}
+                        {!! link_to_route('student.course.start.edit', $title = 'Lanjutkan Sebelumnya', $parameters = [1], $attributes = ['class' => 'btn btn-info']);  !!}
                     @elseif((intval($student->getAttribute('active')) === 1) || is_null($answer) ||($answer->getAttribute('finished_at')->diffInDays($now) > \App\Eloquent\Answer::$exerciseWindow))
-                        {!! link_to_route('student.course.create', $title = 'Mulai Baru', $parameters = [], $attributes = ['class' => 'btn btn-success']);  !!}
+                        {!! link_to_route('student.course.create', $title = 'Mulai Baru', $parameters = [], $attributes = ['class' => 'btn btn-info']);  !!}
                     @else
                         Anda Tidak Diperkenankan Mengerjakan, Silahkan Hubungi Konselor Anda.
                     @endif

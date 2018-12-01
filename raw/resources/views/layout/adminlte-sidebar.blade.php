@@ -19,7 +19,7 @@ if (!is_null($session->get('cbk_msg')))
 
 @section('body-content')
     @parent
-    <div class="modal modal-success fade" id="music-modal">
+    <div class="modal modal-info fade" id="music-modal">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -63,5 +63,5 @@ if (!is_null($session->get('cbk_msg')))
 @endsection
 
 @section('body-property')
-    <body class="hold-transition skin-green fixed sidebar-mini">
+    <body class="hold-transition skin-blue fixed sidebar-mini">
 @endsection

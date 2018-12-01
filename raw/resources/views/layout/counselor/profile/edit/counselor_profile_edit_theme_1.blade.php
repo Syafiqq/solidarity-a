@@ -52,7 +52,7 @@ $form = \Collective\Html\FormFacade::getFacadeRoot();
                 </div>
                 <!-- /.box-body -->
                 <div class="box-footer">
-                    {!! $form->button('Submit', ['type' => 'Submit', 'class' => 'btn btn-success']) !!}
+                    {!! $form->button('Submit', ['type' => 'Submit', 'class' => 'btn btn-info']) !!}
                 </div>
             {!! $form->close() !!}
             <!-- /.box-footer-->

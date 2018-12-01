@@ -134,7 +134,7 @@ $form = \Collective\Html\FormFacade::getFacadeRoot();
                             <button type="reset" class="btn btn-warning">
                                 Kosongkan Pengisian
                             </button>
-                            {!! $form->button('Daftar', ['type' => 'Submit', 'class' => 'btn btn-success']) !!}
+                            {!! $form->button('Daftar', ['type' => 'Submit', 'class' => 'btn btn-info']) !!}
                         </div>
                     </div>
                 </fieldset>

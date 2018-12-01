@@ -72,19 +72,19 @@ $progress = round(($summaryCount - $isFinished) * 100.0 / $summaryCount, 1);
                                 <a class="btn btn-danger"><< Sebelumnya</a>
                             @else
                                 <?php
-                                $isCompleted = is_null($prev->getAttribute('answer')) ? 'default' : 'success';
+                                $isCompleted = is_null($prev->getAttribute('answer')) ? 'default' : 'info';
                                 ?>
                                 {!! link_to_route('student.course.start.edit', '<< Sebelumnya', [$prev->getAttribute('order')], ['class'=> "btn btn-$isCompleted"]); !!}
                             @endif
                             <?php
-                            $isCompleted = is_null($current->getAttribute('answer')) ? 'default' : 'success';
+                            $isCompleted = is_null($current->getAttribute('answer')) ? 'default' : 'info';
                             ?>
                             {!! $form->button('Simpan', ['type' => 'submit','class' => "btn btn-$isCompleted"]) !!}
                             @if(is_null($next))
                                 <a class="btn btn-danger">Selanjutnya >></a>
                             @else
                                 <?php
-                                $isCompleted = is_null($next->getAttribute('answer')) ? 'default' : 'success';
+                                $isCompleted = is_null($next->getAttribute('answer')) ? 'default' : 'info';
                                 ?>
                                 {!! link_to_route('student.course.start.edit', 'Selanjutnya >>', [$next->getAttribute('order')], ['class'=> "btn btn-$isCompleted"]); !!}
                             @endif
@@ -104,7 +104,7 @@ $progress = round(($summaryCount - $isFinished) * 100.0 / $summaryCount, 1);
                         <div class="btn-group" role=group aria-label="question-track">
                             @foreach($summary as $answer_detail)
                                 <?php
-                                $isCompleted = (intval($answer_detail->getAttribute('question')) === intval($question->getAttribute('id'))) ? 'primary' : (is_null($answer_detail->getAttribute('answer')) ? 'default' : 'success');
+                                $isCompleted = (intval($answer_detail->getAttribute('question')) === intval($question->getAttribute('id'))) ? 'primary' : (is_null($answer_detail->getAttribute('answer')) ? 'default' : 'info');
                                 ?>
                                 {!! link_to_route('student.course.start.edit', $answer_detail->getAttribute('order'), [$answer_detail->getAttribute('order')], ['class' => "btn btn-$isCompleted width-40px"]); !!}
                             @endforeach
@@ -112,7 +112,7 @@ $progress = round(($summaryCount - $isFinished) * 100.0 / $summaryCount, 1);
                     </div>
                     <div class="col-sm-12 margin-top-8 margin-bottom-8">
                         <div class="progress">
-                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="{{$progress}}" aria-valuemin="0" aria-valuemax="100" style="width: {{$progress}}%;">
+                            <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="{{$progress}}" aria-valuemin="0" aria-valuemax="100" style="width: {{$progress}}%;">
                                 {{$progress}}%
                             </div>
                         </div>
@@ -123,7 +123,7 @@ $progress = round(($summaryCount - $isFinished) * 100.0 / $summaryCount, 1);
                     <div class="col-sm-6 col-sm-offset-3 text-center centered">
                         @if($isFinished === 0)
                             {!! $form->open(['route' => ['student.course.finish'], 'method' => 'post']) !!}
-                            {!! $form->button('Selesai', ['type' => 'submit', 'class'=> 'btn btn-success']) !!}
+                            {!! $form->button('Selesai', ['type' => 'submit', 'class'=> 'btn btn-info']) !!}
                             {!! $form->close() !!}
                         @endif
                     </div>

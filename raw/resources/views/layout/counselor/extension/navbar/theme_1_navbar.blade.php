@@ -22,7 +22,7 @@
                 <li class="dropdown messages-menu">
                     <a href="" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="fa fa-ticket"></i>
-                        <span class="label label-success"></span>
+                        <span class="label label-info"></span>
                     </a>
                     <ul class="dropdown-menu">
                         <li><!-- start message -->

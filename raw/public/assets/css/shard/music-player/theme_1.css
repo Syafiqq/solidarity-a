@@ -15,7 +15,7 @@ div#cover .panel {
 }
 
 div#cover li.list-group-item.active {
-    background: green;
+    background: deepskyblue;
 }
 
 div#cover #playlist, div#cover audio {

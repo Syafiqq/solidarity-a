@@ -70,7 +70,7 @@ $form = \Collective\Html\FormFacade::getFacadeRoot();
                     </div>
                     <div class="form-group">
                         <div class="col-lg-10 col-lg-offset-2">
-                            {!! $form->button('Ubah Password', ['type' => 'Submit', 'class' => 'btn btn-success']) !!}
+                            {!! $form->button('Ubah Password', ['type' => 'Submit', 'class' => 'btn btn-info']) !!}
                         </div>
                     </div>
                 </fieldset>

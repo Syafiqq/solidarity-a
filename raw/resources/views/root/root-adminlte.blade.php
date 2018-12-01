@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{{asset('/assets/vendor/nprogress/nprogress.min.css')}}">
     {{-- Adminlte --}}
     <link rel="stylesheet" href="{{asset('/assets/vendor/admin-lte/dist/css/AdminLTE.min.css')}}">
-    <link rel="stylesheet" href="{{asset('/assets/vendor/admin-lte/dist/css/skins/skin-green.min.css')}}">
+    <link rel="stylesheet" href="{{asset('/assets/vendor/admin-lte/dist/css/skins/skin-blue.min.css')}}">
 @endsection
 
 @section('body-js-lower-pre')

@@ -145,6 +145,9 @@ $now = \Carbon\Carbon::now();
                                                 <b>Indikator</b>
                                             </th>
                                             <th width="150" class="text-center ">
+                                                <b>Persentase</b>
+                                            </th>
+                                            <th width="150" class="text-center ">
                                                 <b>Klasifikasi</b>
                                             </th>
                                             <th class="text-center ">
@@ -160,6 +163,9 @@ $now = \Carbon\Carbon::now();
                                                         <td class="font-size-12px text-center">
                                                             <strong>{!! array_filter($categories, function($data) use($result){return $data['id'] == $result->{'category'};})[$result->{'category'} - 1]['description'] !!}</strong>
                                                         </td>
+                                                        {{--<td class="font-size-12px text-center">
+                                                            <strong>{!! sprintf('%.4f', $result->{'result'})!!}%</strong>
+                                                        </td>--}}
                                                         <td class="font-size-12px text-center">
                                                             <strong>{!! $analytic['class']!!}</strong>
                                                         </td>

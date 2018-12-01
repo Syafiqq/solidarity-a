@@ -6,7 +6,9 @@
 $counselorProfile = $user->counselor()->first();
 $studentProfile = $student->student()->first();
 $studentAnswer = $student->getAttribute('answer')->first();
-$accumulation = $studentAnswer->answer_result()->sum('result');
+$results = $studentAnswer->answer_result()->get();
+$categories = \App\Eloquent\QuestionCategory::all()->toArray();
+$accumulation = $results->sum('result') * 1.0 / $results->count();
 $analytics = $studentAnswer->getResultAnalytics();
 $now = \Carbon\Carbon::now();
 ?>
@@ -150,10 +152,6 @@ $now = \Carbon\Carbon::now();
                                 <b>{{$student->getAttribute('name')}}</b>
                                                                                   memiliki tingkat solidaritas
                                 <b>{{sprintf("%.4g%%", $accumulation)}}</b>
-                                                                                  dan termasuk dalam klasifikasi
-                                <b>{{array_values(array_filter($analytics, function($analytic) use ($accumulation){
-                                    return (($accumulation > doubleval($analytic['guard']['min'])) && ($accumulation <= doubleval($analytic['guard']['max'])));
-                                }))[0]['class']}}</b>
                             </p>
                         </div>
                     </div>
@@ -164,7 +162,10 @@ $now = \Carbon\Carbon::now();
                                 <thead>
                                 <tr>
                                     <th width="150" class="text-center font-size-14px">
-                                        <b>Interval Persentase</b>
+                                        <b>Indikator Solidaritas</b>
+                                    </th>
+                                    <th width="100" class="text-center font-size-14px">
+                                        <b>Persentase</b>
                                     </th>
                                     <th width="100" class="text-center font-size-14px">
                                         <b>Klasifikasi</b>
@@ -175,29 +176,29 @@ $now = \Carbon\Carbon::now();
                                 </tr>
                                 </thead>
                                 <tbody>
-                                @foreach($analytics as $analytic)
-                                    @if (($accumulation > doubleval($analytic['guard']['min'])) && ($accumulation <= doubleval($analytic['guard']['max'])))
-                                        <tr>
-                                            <td class="font-size-12px text-center">
-                                                <strong>{!! $analytic['interval']!!}</strong>
-                                            </td>
-                                            <td class="font-size-12px text-center">
-                                                <strong>{!! $analytic['class']!!}</strong>
-                                            </td>
-                                            <td class="font-size-12px text-left">
-                                                <strong>{!! $analytic['description']['key']!!}</strong>
-                                                <br>
-                                                <strong>{!! $analytic['description']['value']!!}</strong>
-                                            </td>
-                                        </tr>
-                                    @endif
+                                @foreach($results as $result)
+                                    @foreach($analytics[$result->{'category'}] as $analytic)
+                                        @if (($result->{'result'} > doubleval($analytic['guard']['min'])) && ($result->{'result'} <= doubleval($analytic['guard']['max'])))
+                                            <tr>
+                                                <td class="font-size-12px text-center">
+                                                    <strong>{!! str_replace('Solidaritas ', '', array_filter($categories, function($data) use($result){return $data['id'] == $result->{'category'};})[$result->{'category'} - 1]['description']) !!}</strong>
+                                                </td>
+                                                <td class="font-size-12px text-center">
+                                                    <strong>{!! sprintf('%.4f', $result->{'result'})!!}%</strong>
+                                                </td>
+                                                <td class="font-size-12px text-center">
+                                                    <strong>{!! $analytic['class']!!}</strong>
+                                                </td>
+                                                <td class="font-size-12px text-left">
+                                                    <strong>{!! $analytic['recommendation']!!}</strong>
+                                                </td>
+                                            </tr>
+                                        @endif
+                                    @endforeach
                                 @endforeach
                                 </tbody>
                             </table>
                             <p class="text-left font-size-12px" style="margin-top: 12px">
-                                {!! sprintf(array_values(array_filter($analytics, function($analytic) use ($accumulation){
-                                    return (($accumulation > doubleval($analytic['guard']['min'])) && ($accumulation <= doubleval($analytic['guard']['max'])));
-                                }))[0]['recommendation'],$student->getAttribute('name'))!!}
                             </p>
                         </div>
                     </div>

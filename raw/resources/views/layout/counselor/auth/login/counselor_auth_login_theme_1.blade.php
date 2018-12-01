@@ -17,7 +17,7 @@ $form = \Collective\Html\FormFacade::getFacadeRoot();
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand" href="{{route('root')}}">
-                    <span style="color: #ff9800!important;">Truthfulness</span>
+                    <span style="color: #ff9800!important;">Solidaritas</span>
                 </a>
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder">
                     <span class="sr-only">Toggle navigation</span>

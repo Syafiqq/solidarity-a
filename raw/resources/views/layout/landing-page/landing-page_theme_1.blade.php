@@ -4,11 +4,11 @@
 $html = \Collective\Html\HtmlFacade::getFacadeRoot();
 ?>
 @section('head-title')
-    <title>Truthfulness</title>
+    <title>Solidaritas</title>
 @endsection
 
 @section('head-description')
-    <meta name="description" content="Truthfulness">
+    <meta name="description" content="Solidaritas">
 @endsection
 
 @section('body-content')

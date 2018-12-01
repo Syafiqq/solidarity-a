@@ -55,7 +55,7 @@ $now = \Carbon\Carbon::now();
                                     <div class="row vertical-align">
                                         <div class="col-sm-12 text-center">
                                             <p id="content_welcome" class="margin-bottom-4" style="margin-top: 12px;font-weight: bold; font-size: 16px">LAPORAN INVENTORI
-                                                <i>TRUTHFULNESS</i>
+                                                <i>SOLIDARITAS</i>
                                                                                                                                                         SISWA SMA
                                             </p>
                                         </div>
@@ -121,7 +121,7 @@ $now = \Carbon\Carbon::now();
                                 <div class="col-sm-10 text-center">
                                     <p id="content_welcome" style="font-weight: bold; font-size: 16px; margin: 8px">HASIL ANALISA</p>
                                     <p style="text-align: justify">Berdasarkan pengisian inventori
-                                        <i>Truthfulnesss</i>
+                                        <i>Solidaritass</i>
                                         <b>{{$student->getAttribute('name')}}</b>
                                                                    memiliki tingkat kejujuran
                                         <b>{{sprintf("%.4g%%", $accumulation)}}</b>

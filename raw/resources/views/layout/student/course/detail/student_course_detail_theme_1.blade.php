@@ -6,6 +6,7 @@
 $studentProfile = $student->student()->first();
 $studentAnswer = $student->getAttribute('answer')->first();
 $results = $studentAnswer->answer_result()->get();
+$categories = \App\Eloquent\QuestionCategory::all()->toArray();
 $accumulation = $results->sum('result') * 1.0 / $results->count();
 $analytics = $studentAnswer->getResultAnalytics();
 $now = \Carbon\Carbon::now();
@@ -141,6 +142,9 @@ $now = \Carbon\Carbon::now();
                                         <thead>
                                         <tr>
                                             <th width="150" class="text-center ">
+                                                <b>Indikator</b>
+                                            </th>
+                                            <th width="150" class="text-center ">
                                                 <b>Persentase</b>
                                             </th>
                                             <th width="150" class="text-center ">
@@ -156,6 +160,9 @@ $now = \Carbon\Carbon::now();
                                             @foreach($analytics[$result->{'category'}] as $analytic)
                                                 @if (($result->{'result'} > doubleval($analytic['guard']['min'])) && ($result->{'result'} <= doubleval($analytic['guard']['max'])))
                                                     <tr>
+                                                        <td class="font-size-12px text-center">
+                                                            <strong>{!! array_filter($categories, function($data) use($result){return $data['id'] == $result->{'category'};})[$result->{'category'} - 1]['description'] !!}</strong>
+                                                        </td>
                                                         <td class="font-size-12px text-center">
                                                             <strong>{!! sprintf('%.4f', $result->{'result'})!!}%</strong>
                                                         </td>

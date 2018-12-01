@@ -148,7 +148,7 @@ $now = \Carbon\Carbon::now();
                             <p class="font-size-12px" style="text-align: justify">Berdasarkan pengisian inventori
                                 <i>Solidaritass</i>
                                 <b>{{$student->getAttribute('name')}}</b>
-                                                                                  memiliki tingkat kejujuran
+                                                                                  memiliki tingkat solidaritas
                                 <b>{{sprintf("%.4g%%", $accumulation)}}</b>
                                                                                   dan termasuk dalam klasifikasi
                                 <b>{{array_values(array_filter($analytics, function($analytic) use ($accumulation){

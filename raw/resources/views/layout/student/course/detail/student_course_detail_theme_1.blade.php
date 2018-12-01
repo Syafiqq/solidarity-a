@@ -124,7 +124,7 @@ $now = \Carbon\Carbon::now();
                                     <p style="text-align: justify">Berdasarkan pengisian inventori
                                         <i>Solidaritass</i>
                                         <b>{{$student->getAttribute('name')}}</b>
-                                                                   memiliki tingkat kejujuran
+                                                                   memiliki tingkat solidaritas
                                         <b>{{sprintf("%.4g%%", $accumulation)}}</b>
                                     </p>
                                 </div>

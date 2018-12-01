@@ -52,21 +52,53 @@ class Answer extends Model
     {
         $analytics = [];
 
-        $analytics['rendah']['guard']          = ['min' => -0.1, 'max' => 33.3];
-        $analytics['rendah']['interval']       = '0 - 33%';
-        $analytics['rendah']['class']          = 'Rendah';
-        $analytics['rendah']['recommendation'] = 'Tingkat kejujuran <strong>%s</strong> masih kurang, perlu diperbaiki dan ditingkatkan dengan melakukan tindakan yang mendukung.';
-        $analytics['rendah']['description']    = ['key' => 'Siswa masih kurang memiliki keterampilan dalam  : ', 'value' => '(1) Menentukan pencapaian target akademik (2) menentukan tujuan akademik secara objektif (3) menentukan metode/strategi pencapaian tujuan akademik (4) mengelola waktu pelaksanaan akademik (5) mencari sumber yang dibutuhkan untuk mendukung pencapaian tujuan akademik (6) melaksaanakan tanggung jawab akademik'];
-        $analytics['sedang']['guard']          = ['min' => 33.3, 'max' => 66.6];
-        $analytics['sedang']['interval']       = '34 - 66%';
-        $analytics['sedang']['class']          = 'Sedang';
-        $analytics['sedang']['recommendation'] = 'Tingkat kejujuran <strong>%s</strong> sudah cukup, perlu ditingkatkan dengan melakukan tindakan yang mendukung.';
-        $analytics['sedang']['description']    = ['key' => 'Siswa sudah memiliki keterampilan yang cukup dalam : ', 'value' => '(1) Menentukan pencapaian target akademik (2) menentukan tujuan akademik secara objektif (3) menentukan metode/ strategi pencapaian tujuan akademik (4) mengelola waktu pelaksanaan akademik (5) mencari sumber yang dibutuhkan untuk mendukung pencapaian tujuan akademik (6) melaksaanakan tanggung jawab akademik'];
-        $analytics['tinggi']['guard']          = ['min' => 66.6, 'max' => 100.0];
-        $analytics['tinggi']['interval']       = '67 - 100%';
-        $analytics['tinggi']['class']          = 'Tinggi';
-        $analytics['tinggi']['recommendation'] = 'Tingkat kejujuran <strong>%s</strong> sudah tinggi, perlu dipertahankan dan ditingkatkan dengan melakukan tindakan yang mendukung.';
-        $analytics['tinggi']['description']    = ['key' => 'Siswa sudah memiliki keterampilan yang baik untuk : ', 'value' => '(1) Menentukan pencapaian target akademik (2) menentukan tujuan akademik secara objektif (3) menentukan metode/ strategi pencapaian tujuan akademik (4) mengelola waktu pelaksanaan akademik (5) mencari sumber yang dibutuhkan untuk mendukung pencapaian tujuan akademik (6) melaksaanakan tanggung jawab akademik'];
+        $analytics['1']['rendah']['guard']          = ['min' => -0.1, 'max' => 50];
+        $analytics['1']['rendah']['interval']       = '0 - 50%';
+        $analytics['1']['rendah']['class']          = 'Rendah';
+        $analytics['1']['rendah']['recommendation'] = 'Anda memiliki kesadaran solidaritas sosial yang kurang baik. Hal ini menunjukkan anda kurang mampu  menghargai adanya persamaan prinsip dan persamaan tujuan kepada orang lain';
+        $analytics['1']['rendah']['description']    = ['key' => '', 'value' => ''];
+        $analytics['1']['sedang']['guard']          = ['min' => 50, 'max' => 75];
+        $analytics['1']['sedang']['interval']       = '51 - 75%';
+        $analytics['1']['sedang']['class']          = 'Sedang';
+        $analytics['1']['sedang']['recommendation'] = 'Anda memiliki kesadaran solidaritas sosial yang baik. Hal ini menunjukkan anda cukup mampu menghargai adanya persamaan prinsip dan persamaan tujuan kepada orang lain';
+        $analytics['1']['sedang']['description']    = ['key' => '', 'value' => ''];
+        $analytics['1']['tinggi']['guard']          = ['min' => 75, 'max' => 100.0];
+        $analytics['1']['tinggi']['interval']       = '76 - 100%';
+        $analytics['1']['tinggi']['class']          = 'Tinggi';
+        $analytics['1']['tinggi']['recommendation'] = 'Anda memiliki kesadaran solidaritas sosial yang sangat baik. Hal ini menunjukkan anda sudah mampu menghargai adanya persamaan prinsip dan persamaan tujuan kepada orang lain. ';
+        $analytics['1']['sedang']['description']    = ['key' => '', 'value' => ''];
+
+        $analytics['2']['rendah']['guard']          = ['min' => -0.1, 'max' => 50];
+        $analytics['2']['rendah']['interval']       = '0 - 50%';
+        $analytics['2']['rendah']['class']          = 'Rendah';
+        $analytics['2']['rendah']['recommendation'] = 'Anda memiliki kesadaran solidaritas organik yang  kurang baik. Hal ini menunjukkan anda memiliki sikap kurang mampu menghargai pembagian kerja dalam kelompok, memilih untuk bekerja kelompok dan menghargai hasil dari kerja kelompok.';
+        $analytics['2']['rendah']['description']    = ['key' => '', 'value' => ''];
+        $analytics['2']['sedang']['guard']          = ['min' => 50, 'max' => 75];
+        $analytics['2']['sedang']['interval']       = '51 - 75%';
+        $analytics['2']['sedang']['class']          = 'Sedang';
+        $analytics['2']['sedang']['recommendation'] = 'Anda memiliki kesadaran solidaritas organik yang  baik. Hal ini menunjukkan anda memiliki sikap cukup mampu menghargai pembagian kerja dalam kelompok, memilih untuk bekerja kelompok dan menghargai hasil dari kerja kelompok.';
+        $analytics['2']['sedang']['description']    = ['key' => '', 'value' => ''];
+        $analytics['2']['tinggi']['guard']          = ['min' => 75, 'max' => 100.0];
+        $analytics['2']['tinggi']['interval']       = '76 - 100%';
+        $analytics['2']['tinggi']['class']          = 'Tinggi';
+        $analytics['2']['tinggi']['recommendation'] = 'Anda memiliki kesadaran solidaritas organik yang sangat baik. Hal ini menunjukkan anda sudah mampu memiliki sikap menghargai pembagian kerja dalam kelompok, memilih untuk bekerja kelompok dan menghargai hasil dari kerja kelompok.';
+        $analytics['2']['sedang']['description']    = ['key' => '', 'value' => ''];
+
+        $analytics['3']['rendah']['guard']          = ['min' => -0.1, 'max' => 50];
+        $analytics['3']['rendah']['interval']       = '0 - 50%';
+        $analytics['3']['rendah']['class']          = 'Rendah';
+        $analytics['3']['rendah']['recommendation'] = 'Anda memiliki kesadaran solidaritas Marginal yang kurang baik. Hal ini menunjukkan anda tidak mampu memiliki kesadaran bersama akan pembagian kerja dan adanya persamaan prinsip dan tujuan kepada orang lain.';
+        $analytics['3']['rendah']['description']    = ['key' => '', 'value' => ''];
+        $analytics['3']['sedang']['guard']          = ['min' => 50, 'max' => 75];
+        $analytics['3']['sedang']['interval']       = '51 - 75%';
+        $analytics['3']['sedang']['class']          = 'Sedang';
+        $analytics['3']['sedang']['recommendation'] = 'Anda memiliki kesadaran solidaritas Marginal yang baik. Tidak menutup kemungkinan anda belum mampu memiliki adanya kesadaran bersama akan pembagian kerja dan adanya persamaan prinsip dan tujuan kepada orang lain.';
+        $analytics['3']['sedang']['description']    = ['key' => '', 'value' => ''];
+        $analytics['3']['tinggi']['guard']          = ['min' => 75, 'max' => 100.0];
+        $analytics['3']['tinggi']['interval']       = '76 - 100%';
+        $analytics['3']['tinggi']['class']          = 'Tinggi';
+        $analytics['3']['tinggi']['recommendation'] = 'Anda memiliki kesadaran solidaritas Marginal yang sangat baik. Hal ini menunjukkan anda masih mampu memiliki adanya kesadaran bersama akan pembagian kerja dan adanya persamaan prinsip dan tujuan kepada orang lain.';
+        $analytics['3']['sedang']['description']    = ['key' => '', 'value' => ''];
 
         return $analytics;
     }

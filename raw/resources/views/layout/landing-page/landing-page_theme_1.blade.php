@@ -26,9 +26,9 @@ $html = \Collective\Html\HtmlFacade::getFacadeRoot();
                 </div>
 
 
-                <h2 style="font-family: Arial Black,serif; color: #48032c; font-style: italic;">Aplikasi Inventori
-                    <span class="rotating">Nilai Moral Truthfulness</span>
-                                                                                                Bagi Siswa SMP
+                <h2 style="font-family: Arial Black; color: #201063; font-style: italic;">Aplikasi Inventori
+                    <span class="rotating">Kesadaran Solidaritas Sosial</span>
+                                                                                          Bagi Siswa SMA
                 </h2>
                 <div class="actions">
                     <a href="#about" class="btn-services" style="font-family: Arial;">Mulai Sekarang!</a>
@@ -87,9 +87,9 @@ $html = \Collective\Html\HtmlFacade::getFacadeRoot();
         <div class="container wow fadeInUp">
             <div class="row">
                 <div class="col-md-12">
-                    <h3 class="section-title">Nilai Moral Truthfulness</h3>
+                    <h3 class="section-title">Kesadaran Solidaritas Sosial</h3>
                     <div class="section-title-divider"></div>
-                    <h2 class="section-description">Penjelasan teoritis dan operasional atas konsep nilai moral Truthfulness</h2>
+                    <h2 class="section-description">Penjelasan teoritis dan operasional atas konsep kesadaran solidaritas sosial</h2>
                 </div>
             </div>
         </div>
@@ -97,13 +97,13 @@ $html = \Collective\Html\HtmlFacade::getFacadeRoot();
             <div class="row">
                 <div class="col-md-6 col-md-push-6 about-content">
                     <p class="about-text">
-                        Purwadarminta dalam Kamus Umum Bahasa Indonesia menerangkan bahwa kebenaran (</i>truthfulness</i>) adalah 1) Keadaan (hal dan sebagainya) yang benar (cocok dengan hal atau keadaan yang sesungguhnya. 2) Sesuatu yang benar (sungguh-sungguh ada, betul-betul hal demikian halnya, dan sebagainya). 3) Kejujuran, kelurusan hati. Menurut Ozar nilai khas moral yang ada dimasyarakat yang berfungsi sebagai bentuk kebenaran dalam berkomunikasi. Dalam jurnal penelitiannya Ozar memfokuskan pada membahas mengenai pentingnya moral atau kebenaran komunikatif yang dapat ditemukan dalam pemahaman kita tentang konsep ketulusan dan kejujuran.
+                        Kesadaran adalah hal yang dirasakan atau dialami oleh seseorang, atau kesadaran seseorang atas keadaan dirinya sendiri (KBBI). Solidaritas adalah sifat (perasaan) solider, sifat satu rasa (senasib), perasaan setia kawan yang pada suatu kelompok anggota wajib memilikinya,sedangkan sosial adalah berkenaan dengan masyarakat, perlu adanya komunikasi dalam usaha menunjang pembangunan, suka memperhatikan kepentingan umum (Depdiknas, 2007). Solidaritas sosial adalah kepedulian secara bersama kelompok yang menunjukkan pada suatu keadaan hubungan antara individu dan/atau kelompok yang didasarkan pada persamaan moral, kolektif yang sama, dan kepercayaan yang dianut serta diperkuat oleh pengalaman emosional (Johnson:1981).
                     </p>
                     <p class="about-text">
-                        Kebenaran komunikatif seseorang terhadap orang lain sangat erat hubungannya dengan pembentukan kebenaran komunikatif dari budaya kita. Salah satu kebenaran komunikatif yang disebutkan oleh Ozar adalah ketulusan. Ketulusan merupakan suatu keyakinan dari dalam hati kita. Seperti halnya dengan ketulusan, Jujur merupakan sikap hati dalam berperilaku sesuai dengan keyakinan dan nilai yang ada pada dirinya.
+                        Konsep solidaritas berhubungan dengan identifikasi manusia dan dukungan anggota kelompok yang lain yang termasuk didalamnya. Konsep ini berkaitan dengan Durkheim dalam bukunya The Division of Labour in Society yang mengimplikasikan pembagian dari apa yang ia sebut sebagai solidaritas mekanik, solidaritas organik dan solidaritas marginal (Scott, 2010: 268). Solidaritas merupakan fenomena rasional manusia yang datang bersama-sama dalam mencapai kepentingan bersama. Hal ini sesuai dengan pendapat Durkheim (dalam Upe, 2010: 95) menyatakan bahwa “Solidaritas dalam masyarakat bekerja sebagai perekat sosial, dalam konteks ini dapat berupa nilai, adat istiadat, dan kepercayaan yang dianut bersama oleh anggotanya dalam ikatan kesadaran kolektif”. Namun keduanya dibedakan dari segi kesadaranakan kebersamaan tersebut.
                     </p>
                     <p class="about-text">
-                        Dalam jurnalnya yang berjudul </i>“The Values of Truth and the Truth of Values”</i> Lycnh menjelaskan bahwa salah satu nilai dalam Truthfulness adalah kebenaran sebagai norma kepercayaan yang merupakan salah satu nilai moral individu ketika mempercayai sesuatu mereka menganggap bahwa itu benar. Dan kebenaran merupakan tujuan individu untuk dapat mempercayai sesuatu.
+                        Berdasarkan beberapa pendapat tokoh diatas dapat disimpulkan bahwa Kesadaran solidaritas sosial adalah suatu yang dilakukan dan dirasakan oleh individu tentang kesetiakawanan , kepedulian dalam menjalin hubungan antar individu atau kelompok dalam mencapai kepentingan bersama
                     </p>
                 </div>
             </div>
@@ -154,7 +154,7 @@ $html = \Collective\Html\HtmlFacade::getFacadeRoot();
                 <div class="col-md-12">
                     <h3 class="section-title">Profil Pengembang</h3>
                     <div style="margin-top: 40px" class="section-title-divider"></div>
-                    <h2 class="section-description" style="margin-bottom: 0px; color: black;">Dosen Pembimbing & Asisten Dosen Pembimbing</h2>
+                    <h2 class="section-description" style="margin-bottom: 0px; color: #064571; font-family: clarendon blk bt;">Dosen Pembimbing & Asisten Dosen Pembimbing</h2>
                 </div>
             </div>
 
@@ -169,7 +169,7 @@ $html = \Collective\Html\HtmlFacade::getFacadeRoot();
                     </div>
                 </div>
                 <div class="col-md-9">
-                    <div class="quote">
+                    <div class="quote" style="color: #064571;">
                         <b>
                             <img src="/assets/baked/landingpage/img/quote_sign_left.png" alt="">
                         </b>
@@ -185,7 +185,7 @@ $html = \Collective\Html\HtmlFacade::getFacadeRoot();
 
             <div class="row">
                 <div class="col-md-9">
-                    <div class="quote">
+                    <div class="quote" style="color: #064571;">
                         <b>
                             <img src="/assets/baked/landingpage/img/quote_sign_left.png" alt="">
                         </b>
@@ -209,56 +209,7 @@ $html = \Collective\Html\HtmlFacade::getFacadeRoot();
             </div>
 
             <div style="margin-top: 40px" class="section-title-divider"></div>
-            <h2 style="margin-bottom: 0px; color: black;" class="section-description">Tim Pengembang Inventori Truthfulness</h2>
-
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="profile">
-                        <div class="pic">
-                            <img src="/assets/baked/landingpage/img/1.jpg" alt="">
-                        </div>
-                        <h4>Ananda Riskiya Nur Isnaini</h4>
-                        <span>NIM. 170111600016</span>
-                    </div>
-                </div>
-                <div class="col-md-9">
-                    <div class="quote">
-                        <b>
-                            <img src="/assets/baked/landingpage/img/quote_sign_left.png" alt="">
-                        </b>
-                        Lahir di Bondowoso, 23 November 1998 dan Bertempat tinggal di Jl. Tamanan Grujugan Lor Jambesari, Bondowoso. Memiliki Hobby Travelling dan Motto “DUIT (Do’a Usaha Ikhtiar Tawakal)”.
-                        <br>
-                        email: anandarizkiyaa@gmail.com; phone: 089656764704
-                        <small>
-                            <img src="/assets/baked/landingpage/img/quote_sign_right.png" alt="">
-                        </small>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-9">
-                    <div class="quote">
-                        <b>
-                            <img src="/assets/baked/landingpage/img/quote_sign_left.png" alt="">
-                        </b>
-                        Lahir di Malang, 04 Agustus 1998 dan Bertempat tinggal di Jl. Sultan Agung (Sempol) Rt. 01 Rw. 05 Singosari, Malang. Memiliki Hobby Mencari Hal Baru dan Motto “Insya Allah Nothing is Impossible”.
-                        <br>
-                        email: ovitadewi4@gmail.com; phone: 089681006152
-                        <small>
-                            <img src="/assets/baked/landingpage/img/quote_sign_right.png" alt="">
-                        </small>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="profile">
-                        <div class="pic">
-                            <img src="/assets/baked/landingpage/img/2.jpg" alt="">
-                        </div>
-                        <h4>Ovita Dewi Sandra Wati</h4>
-                        <span>NIM. 170111600020</span>
-                    </div>
-                </div>
-            </div>
+            <h2 style="margin-bottom: 0px; color: #064571;font-family: clarendon blk bt;" class="section-description">CDF Crew - Tim Pengembang Inventori</h2>
 
             <div class="row">
                 <div class="col-md-3">
@@ -266,18 +217,67 @@ $html = \Collective\Html\HtmlFacade::getFacadeRoot();
                         <div class="pic">
                             <img src="/assets/baked/landingpage/img/3.jpg" alt="">
                         </div>
-                        <h4>Yustina Novi Erniasari</h4>
-                        <span>NIM. 170111600116</span>
+                        <h4>Chindy Azza Avrilliya</h4>
+                        <span>CDF Crew - NIM. 170111600035</span>
                     </div>
                 </div>
                 <div class="col-md-9">
-                    <div class="quote">
+                    <div class="quote" style="color: #064571;">
                         <b>
                             <img src="/assets/baked/landingpage/img/quote_sign_left.png" alt="">
                         </b>
-                        Lahir di Kediri ,08 November 1998 dan Bertempat tinggal di Jl.Nakula, Dsn. Brenjuk, Desa Purwodadi RT 02 RW 02 Kecamatan Kras, Kab. Kediri. Memiliki Hobby Travelling dan membaca, serta memiliki Motto “Man Shobaro Zafiro (Siapa yang bersabar akan beruntung)”.
+                        Lahir di Lamongan, 26 April 1999 dan Bertempat tinggal di Jl. Sidorejo Rt 02/Rw 04 Kec.Babat Kab. Lamongan. Memiliki Hobby Membaca dan Berekreasi, serta memiliki Motto “Hadapi, Jalani, dan Nikmati”.
                         <br>
-                        email: yustinanovierniasari@gmail.com; phone: 085708614773
+                        email: cindyazza26@gmail.com; phone: 081249397176
+                        <small>
+                            <img src="/assets/baked/landingpage/img/quote_sign_right.png" alt="">
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="quote" style="color: #064571;">
+                        <b>
+                            <img src="/assets/baked/landingpage/img/quote_sign_left.png" alt="">
+                        </b>
+                        Lahir di Blitar, 10 Mei 1999 dan Bertempat tinggal di Dusun Sebeng, Desa Pagergunung, Rt01/Rw02, Kec.Kesamben, Kab.Blitar. Memiliki Hobby Bernyanyi dan Membaca, serta memiliki Motto “Duri di hari ini adalah bunga di hari esok”.
+                        <br>
+                        email: dwikresmi@gmail.com; phone: 082245066058
+                        <small>
+                            <img src="/assets/baked/landingpage/img/quote_sign_right.png" alt="">
+                        </small>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="profile">
+                        <div class="pic">
+                            <img src="/assets/baked/landingpage/img/1.jpg" alt="">
+                        </div>
+                        <h4>Dwi Kresminia Ningsih</h4>
+                        <span>CDF Crew - NIM. 170111600093</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="profile">
+                        <div class="pic">
+                            <img src="/assets/baked/landingpage/img/2.jpg" alt="">
+                        </div>
+                        <h4>Nisrina Fatin</h4>
+                        <span>CDF Crew - NIM. 170111600057</span>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="quote" style="color: #064571;">
+                        <b>
+                            <img src="/assets/baked/landingpage/img/quote_sign_left.png" alt="">
+                        </b>
+                        Lahir di Pasuruan, 24 Juli 1998 dan Bertempat tinggal di Tenggulungan Tunggul Wulung Pandaan Pasuruan. Memiliki Hobby Mendengarkan Musik dan Membaca Novel, serta memiliki Motto “Don’t stop when you are tired, But stop when you are done”.
+                        <br>
+                        email: fatinnisrina400@gmail.com; phone: 087761781402
                         <small>
                             <img src="/assets/baked/landingpage/img/quote_sign_right.png" alt="">
                         </small>
@@ -287,11 +287,11 @@ $html = \Collective\Html\HtmlFacade::getFacadeRoot();
 
 
             <div style="margin-top: 0px" class="section-title-divider"></div>
-            <h2 style="margin-bottom: 0px; color: black;" class="section-description">Tim Pengembang Aplikasi</h2>
+            <h2 style="margin-bottom: 0px; color: #064571; font-family: clarendon blk bt;" class="section-description">Tim Pengembang Aplikasi</h2>
 
             <div class="row">
                 <div class="col-md-9">
-                    <div class="quote">
+                    <div class="quote" style="color: #064571;">
                         <b>
                             <img src="/assets/baked/landingpage/img/quote_sign_left.png" alt="">
                         </b>
@@ -323,7 +323,7 @@ $html = \Collective\Html\HtmlFacade::getFacadeRoot();
                     </div>
                 </div>
                 <div class="col-md-9">
-                    <div class="quote">
+                    <div class="quote" style="color: #064571;">
                         <b>
                             <img src="/assets/baked/landingpage/img/quote_sign_left.png" alt="">
                         </b>
@@ -355,8 +355,8 @@ $html = \Collective\Html\HtmlFacade::getFacadeRoot();
                 <div class="col-md-12">
                     <div class="copyright">Content by
                                            &copy; Copyright
-                        <strong>2018</strong>
-                        <a href="">Truthfulness</a>
+                        <strong>CDF Crew - 2018</strong>
+                        <a href="">Kesadaran Solidaritas Sosial</a>
                     </div>
                     <div class="credits">
                         <!--

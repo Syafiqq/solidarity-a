@@ -5,7 +5,7 @@
             $("page#printable-area").print({
                 globalStyles: true,
                 mediaPrint: false,
-                stylesheet: ['/assets/bower_components/bootstrap/dist/css/bootstrap.min.css', '/assets/css/report/publish/counselor-publish-report.min.css'],
+                stylesheet: '',
                 noPrintSelector: ".no-print",
                 iframe: true,
                 append: null,

@@ -163,9 +163,9 @@ $now = \Carbon\Carbon::now();
                                                         <td class="font-size-12px text-center">
                                                             <strong>{!! array_filter($categories, function($data) use($result){return $data['id'] == $result->{'category'};})[$result->{'category'} - 1]['description'] !!}</strong>
                                                         </td>
-                                                        {{--<td class="font-size-12px text-center">
-                                                            <strong>{!! sprintf('%.4f', $result->{'result'})!!}%</strong>
-                                                        </td>--}}
+                                                        <td class="font-size-12px text-center">
+                                                            <strong>{!! sprintf('%.2f', $result->{'result'})!!}%</strong>
+                                                        </td>
                                                         <td class="font-size-12px text-center">
                                                             <strong>{!! $analytic['class']!!}</strong>
                                                         </td>

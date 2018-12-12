@@ -101,6 +101,8 @@ $form = \Collective\Html\FormFacade::getFacadeRoot();
                         </label>
                         <div class="col-lg-9">
                             {!! $form->password('password', ['placeholder' => 'Kata Sandi', 'required'=> true, 'class'=>'form-control']) !!}
+                            <input type="checkbox" class="passwordable-invoker">
+                            Tampilkan Sandi
                         </div>
                     </div>
                     <div class="form-group">
@@ -109,6 +111,8 @@ $form = \Collective\Html\FormFacade::getFacadeRoot();
                         </label>
                         <div class="col-lg-9">
                             {!! $form->password('password_confirmation', ['placeholder' => 'Ketik Ulang Kata Sandi', 'required'=> true, 'class' => 'form-control']) !!}
+                            <input type="checkbox" class="passwordable-invoker">
+                            Tampilkan Sandi
                         </div>
                     </div>
                     <div class="form-group">

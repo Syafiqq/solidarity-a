@@ -1,6 +1,15 @@
 (function ($) {
     $(function () {
-
+        $('.passwordable-invoker').on('click', function () {
+            var pass_selector = $(this).siblings('input.form-control');
+            if ($(this).is(':checked'))
+            {
+                pass_selector.attr('type', 'text')
+            } else
+            {
+                pass_selector.attr('type', 'password')
+            }
+        });
     });
     /*
      * Run right away
